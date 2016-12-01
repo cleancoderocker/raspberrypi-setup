@@ -48,18 +48,18 @@
     ```
 *   `sudo nano /etc/network/interfaces`
     *   Content:
-        ```
-        source-directory /etc/network/interfaces.d
-        auto lo
-        iface lo inet loopback
-        auto wlan0
-        allow-hotplug wlan0
-        iface wlan0 inet dhcp
-        wpa-ap-scan 1
-        wpa-scan-ssid 1
-        wpa-ssid "<SSID>"
-        wpa-psk "<KEY>"
-        pre-up iw dev wlan0 set power_save off
-        post-down iw dev wlan0 set power_save on
-        ```
+    ```
+    source-directory /etc/network/interfaces.d
+    auto lo
+    iface lo inet loopback
+    auto wlan0
+    allow-hotplug wlan0
+    iface wlan0 inet dhcp
+    wpa-ap-scan 1
+    wpa-scan-ssid 1
+    wpa-ssid "<SSID>"
+    wpa-psk "<KEY>"
+    pre-up iw dev wlan0 set power_save off
+    post-down iw dev wlan0 set power_save on
+    ```
 *   `sudo ifdown wlan0 && sudo ifup wlan0`
