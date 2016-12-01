@@ -25,4 +25,5 @@
 *   Download installation script for Debian: `curl -sL https://deb.nodesource.com/setup_7.x | bash -`
     *   More installation scripts [here](https://github.com/nodesource/distributions)
     *   Note: if it does not work without sudo, use the following command: `sudo curl -sL https://deb.nodesource.com/setup_7.x | bash -`
-*   `sudo su apt-get install -y nodejs`
+*   `sudo su`
+*   `apt-get install -y nodejs`
