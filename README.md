@@ -63,3 +63,12 @@
     post-down iw dev wlan0 set power_save on
     ```
 *   `sudo ifdown wlan0 && sudo ifup wlan0`
+
+## Mount Raspberry Pi via SSH
+`sshfs pi@raspberrypi:/home/pi/Documents/ raspberrypi-001/`
+
+## Take photos
+```
+raspistill -o image2.jpg
+raspistill -t 30000 -tl 2000 -o image%04d.jpg
+```
